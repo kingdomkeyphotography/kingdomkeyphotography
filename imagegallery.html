@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />	
+	<link rel="icon" href="camera-icon.png" type="image/x-ico">
+<title>Kingdom Key Photography - Image Gallery</title>   
+<style>
+body { 
+    background-color: #FFFFFF;
+    color: #000000; 
+}
+  
+#gallery { 
+    position: relative; 
+    }
+    
+#gallery ul {
+    list-style-type: none;
+    width: 200px; 
+}
+#gallery li { 
+    display: inline; 
+    float: left;
+    padding: 10px; 
+}
+    
+#gallery img { 
+    border-style: none;
+}
+    
+#gallery a { 
+    text-decoration: none;
+    font-style: italic;  
+    color: #000000; 
+}
+#gallery span { 
+    position: absolute;
+    left: -1000px;
+    opacity: 0;
+    transition:  opacity 3s ease-in-out; 
+}
+#gallery a:hover span {     
+    position: absolute;
+    top: 16px;
+    left: 320px; 
+    text-align: center; 
+    opacity: 1; 
+}
+    
+figure {
+    position: absolute;
+    left: 280px; 
+    text-align: center; 
+    opacity: .25;
+}
+
+nav{
+    float: left;
+    padding: 5% 5% 0 0;
+    height: 50px;
+    font-weight: bold;
+}
+
+.nav2{
+    float: left;
+    padding: 5% 5% 0 0;
+    height: 50px;
+    font-weight: bold;
+}
+nav ul{
+    list-style: none;
+    float: left;
+    font-weight: bold;
+}
+
+.na2vul{
+    list-style: none;
+    float: left;
+    font-weight: bold;
+}
+
+nav ul li{
+    font-family: 'Ralway', sans-serif;
+    font-size: 120%;
+}
+
+.na2vuli{
+    font-family: 'Ralway', sans-serif;
+    font-size: 120%;
+}
+
+nav ul li a{
+    color: #FFFFFF;
+    text-decoration: none;
+    text-shadow: 1px 1px #000000;
+}
+
+.nav2ullia{
+    color: #000000;
+    text-decoration: none;
+    text-shadow: 1px 1px #FFFFFF;
+}
+
+nav ul li a:hover{
+    color: #000000;
+}
+
+.nav2ullia:hover{
+    color: #0000FF;
+}
+
+nav ul, nav:active ul {
+    display: none;
+    left: 45px;
+    top: 60px;
+    padding: 8px 0;
+    width: 20%;
+    z-index: 1000;
+}
+
+nav li{
+    width: 100%;
+    padding: 8px 0 10px 7px;
+    margin: 0;
+}
+
+nav:hover ul {
+    display: block;
+    position: absolute;
+}
+
+.dropdown{
+    text-indent: 10px;
+    opacity: 20;
+    width: 200px;
+    height: 40px;
+    box-shadow: 1px 5px 5px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdowncolor{
+    color: #000000;
+}
+
+.dropdowncolor:hover{
+    color: #0000FF;
+}
+#menu-icon{
+    width: 30px;
+    height: 25px;
+    background: url(nav-icon.png) center;
+    display: inline-block;
+    margin: 50px 0 0 50px;
+}
+#menu-icon2{
+    width: 30px;
+    height: 26px;
+    background: url(nav-icon.png) center;
+    display: inline-block;
+    margin: -1em 5px 1px 50px;
+}
+.clearfix{
+    clear: both;
+}
+
+</style>
+</head>
+<body>
+<nav class="nav2">
+    <a href= "#" id="menu-icon2"></a>
+        <ul class="nav2ul"><br>
+            <li class="nav2ulli"><a class="nav2ullia" href="index.html">Home</a></li>
+            <li class="nav2ulli"><a class="nav2ullia" href="aboutme.html">About Me</a>
+            <li class="nav2ulli"><a class="nav2ullia" href="portfolio.html">Portfolio</a></li>
+                <li class="dropdown2"><a class= "dropdowncolor" href="landscapes.html">Landscapes</a></li>
+                <li class="dropdown2"><a class= "dropdowncolor" href="portraits.html">Portraits &amp; People</a></li>
+                <li class="dropdown2"><a class= "dropdowncolor" href="blackandwhite.html">Black &amp; White</a></li>
+            <li class="nav2ulli"><a class="nav2ullia" href="booking.html" >Booking</a></li>
+            <li class="nav2ulli"><a class="nav2ullia" href="imagegallery.html" >Image Gallery</a></li>
+        </ul>    
+        </nav>
+<section class="sidebar1">
+    <img src="kingdomkeyphotographylogo.jpg" alt="Logo">
+    </section>
+
+<div class="clearfix"></div>
+<section>
+<h1 class="mainh1">Image Gallery</h1>
+<div id="gallery">
+    
+<figure>
+    <img src="imgactualsize/IMG_1260.jpeg" width="400" height="300" alt="Niagara Falls - Canada">
+</figure>
+    
+<ul>
+  <li><a href="imgthumbnail/IMG_1260.jpeg"><img src="imgthumbnail/IMG_1260.jpeg" width="100" height="75" alt="Niagara Falls - Canada">
+    <span><img src="imgactualsize/IMG_1260.jpeg" width="400" height="300" alt="Niagara Falls - Canada"><br>Niagara Falls - Canada</span></a>
+  </li>
+    
+  <li><a href="imgthumbnail/IMG_1260.jpeg"><img src="imgthumbnail/IMG_1645.jpeg" width="100" height="75" alt="Poppies Field in Lancaster, CA">
+    <span><img src="imgactualsize/IMG_1645.jpeg" width="400" height="300" alt="Poppies Field in Lancaster, CA"><br>Poppies Field in Lancaster, CA</span></a>
+  </li>
+    
+  <li><a href="imgthumbnail/IMG_1260.jpeg"><img src="imgthumbnail/IMG_0390.jpg" width="100" height="75" alt="Koi Pond - Fashion Island - Newport Beach, CA">
+    <span><img src="imgactualsize/IMG_0390.jpg" width="400" height="300" alt="Koi Pond - Fashion Island - Newport Beach, CA"><br>Koi Pond - Fashion Island - Newport Beach, CA</span></a>
+  </li>
+    
+  <li><a href="imgthumbnail/IMG_1260.jpeg"><img src="imgthumbnail/IMG_0898.jpeg" width="100" height="75" alt="Central Park - New York">
+    <span><img src="imgactualsize/IMG_0898.jpeg" width="400" height="300" alt="Central Park - New York"><br>Central Park - New York City, NY</span></a>
+  </li>
+    
+    <li><a href="imgthumbnail/IMG_1260.jpeg"><img src="imgthumbnail/IMG_0578.jpeg" width="100" height="75" alt="Cherry Blossoms - University of Washington">
+    <span><img src="imgactualsize/IMG_0578.jpeg" width="400" height="300" alt="Cherry Blossoms - University of Washington"><br>Cherry Blossoms - University of Washington</span></a>
+  </li>
+
+    <li><a href="imgthumbnail/IMG_1260.jpeg"><img src="imgthumbnail/IMG_0074.jpg" width="100" height="75" alt="Bellagio Fountains - Las Vegas, NV">
+    <span><img src="imgactualsize/IMG_0074.jpg" width="400" height="300" alt="Bellagio Fountains - Las Vegas, NV"><br>Bellagio Fountains - Las Vegas, NV</span></a>
+  </li>
+</ul>
+</div>
+</section>
+
+
+  

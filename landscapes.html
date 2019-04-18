@@ -1,0 +1,163 @@
+<!DOCTYPE html> 
+<html lang="en">
+    
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Kingdom Key Photography - Landscapes</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />	
+	<link href="css/font-awesome.min.css" rel="stylesheet"/>
+	<link rel="icon" href="camera-icon.png" type="image/x-ico">
+</head>
+<body>
+
+<nav class="nav2">
+    <a href= "#" id="menu-icon2"></a>
+    <br><br>
+        <ul class="nav2ul">
+            
+            <li class="nav2uli"><a class="nav2ullia" href="index.html">Home</a></li>
+            <li class="nav2uli"><a class="nav2ullia" href="aboutme.html">About Me</a>
+            <li class="nav2uli"><a class="nav2ullia" href="portfolio.html">Portfolio</a></li>
+                <li class="dropdown2"><a class= "dropdowncolor" href="landscapes.html">Landscapes</a></li>
+                <li class="dropdown2"><a class= "dropdowncolor" href="portraits.html">Portraits &amp; People</a></li>
+                <li class="dropdown2"><a class= "dropdowncolor" href="blackandwhite.html">Black &amp; White</a></li>
+            <li class="nav2uli"><a class="nav2ullia" href="booking.html" >Booking</a></li>
+        </ul>    
+        </nav>
+
+<h1 class="portfolioh1-1">Landscape Photos</h1>
+    
+<section class="sidebar1">
+    <img src="kingdomkeyphotographylogo.jpg" alt="Logo">
+    </section>
+
+<div class="clearfix"></div>
+<div class="slideshow-container">
+    
+<div class="mySlides fade">
+<div class="numbertext">1 / 9</div>
+    <img src="imgactualsize/IMG_1260.jpeg" alt="Niagara Falls-Canada" style= width: 100%>
+    <div class="text">Niagara Falls</div>
+</div>
+    
+<div class="mySlides fade">
+<div class="numbertext">2 / 9</div>
+    <img src="imgactualsize/IMG_0122.jpeg" alt="Corona Del Mar State Beach - Waves - California" style="width: 100%">
+    <div class="text">Corona Del Mar State Beach - Waves - California</div>
+</div>
+    
+<div class="mySlides fade">
+<div class="numbertext">3 / 9</div>
+    <img src="imgactualsize/IMG_0578.jpeg" alt="Cherry Blossoms - University of Washington" style="width: 100%">
+    <div class="text">Cherry Blossoms - University of Washington</div>
+</div>
+    
+<div class="mySlides fade">
+<div class="numbertext">4 / 9</div>
+    <img src="imgactualsize/IMG_0206.jpeg" alt="Corona Del Mar State Beach - Sunset - California" style="width: 100%">
+    <div class="text">Corona Del Mar State Beach - Sunset</div>
+</div>
+    
+<div class="mySlides fade">
+<div class="numbertext">5 / 9</div>
+    <img src="imgactualsize/IMG_0898.jpeg" alt = "Central Park - New York" style="width: 100%">
+    <div class="text">Central Park - New York City</div>
+</div>
+    
+<div class="mySlides fade">
+<div class="numbertext">6 / 9</div>
+    <img src="imgactualsize/IMG_1645.jpeg" alt = "Poppies Field - Lancaster - Superbloom" style="width: 100%">
+    <div class="text">Poppies 'Superbloom' Field - Lancaster</div>
+</div>
+    
+<div class="mySlides fade">
+<div class="numbertext">7 / 9</div>
+    <img src="imgactualsize/IMG_1118.jpg" alt = "Disney's California Adventure - Pixar Pier" style="width: 100%">
+    <div class="text">Disney's California Adventure - Pixar Pier</div>
+ </div>
+    
+<div class="mySlides fade">
+<div class="numbertext">8 / 9</div>
+    <img src="imgactualsize/IMG_0748.jpeg" alt ="Disneyland Holiday Castle - Reflections " style="width: 100%">
+    <div class="text">Disneyland Holiday Castle - Reflections</div>
+</div>
+    
+<div class="mySlides fade">
+<div class="numbertext">9 / 9</div>
+    <img src="imgactualsize/IMG_0074.jpg" alt= "Bellagio Water Show - Las Vegas" style="width=100%">
+    <div class="text">Bellagio Water Show - Las Vegas</div>
+</div>
+    
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span> 
+    <span class="dot" onclick="currentSlide(4)"></span> 
+    <span class="dot" onclick="currentSlide(5)"></span> 
+    <span class="dot" onclick="currentSlide(6)"></span> 
+    <span class="dot" onclick="currentSlide(7)"></span> 
+    <span class="dot" onclick="currentSlide(8)"></span> 
+    <span class="dot" onclick="currentSlide(9)"></span> 
+    
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+<div class="clearfix"></div>
+    <h2>Contact Me</h2>
+    <section class="contact">
+        <p>Kevin Nguyen @ <a href=mailto:kingdomkey.photography@gmailcom>kingdomkey.photography@gmail.com</a></p>
+        </section>
+        
+<div class="clearfix"></div>
+    <h2>Follow Me on Instagram!</h2>
+            <a href="https://www.instagram.com/kingdomkey_photography/"><img src="instagramicon.jpg" alt="Instagram" class="instacenter">
+            </a>
+    
+<audio controls autoplay>
+    <source src="Bebe%20Rexha%20-%20Meant%20to%20Be%20(feat.%20Florida%20Georgia%20Line)%20-%20EASY%20Piano%20Tutorial%20by%20PlutaX.mp3" type="audio/mpeg"/>
+    </audio>
+        <p class = "audiofontsize">Bebe Rexha - Meant to Be (feat. Florida Georgia Line) - <br>
+            Piano by PlutaX. Authorship and credit belongs to PlutaX.
+
+<footer class="second">
+        <p>&copy; 2019 Kingdom Key Photography. Concept and Idea from Kingdom Hearts of Square Enix Co., LTD. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
