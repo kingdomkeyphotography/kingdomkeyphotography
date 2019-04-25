@@ -10,28 +10,26 @@
 	<link href="css/font-awesome.min.css" rel="stylesheet"/>
 	<link rel="icon" href="camera-icon.png" type="image/x-ico">
 </head>
+<div class="navbar">
+  <a href=index.html>Home</a>
+  <a href=aboutme.html>About Me</a>
+  <a href=booking.html>Booking</a>
+    <div class="dropdown2"><a href=portfolio.html>Portfoilio</a>
+    <div class="dropdown2-content2">
+        <a href=landscapes.html>Landscapes</a>
+        <a href=portraits.html> Portraits &amp; People</a>
+        <a href=blackandwhite.html>Black &amp; White</a>
+        </div>
+    </div> 
+</div>
 <body>
-
-<nav class="nav2">
-    <a href= "#" id="menu-icon2"></a>
-    <br><br>
-        <ul class="nav2ul">
-            
-            <li class="nav2uli"><a class="nav2ullia" href="index.html">Home</a></li>
-            <li class="nav2uli"><a class="nav2ullia" href="aboutme.html">About Me</a>
-            <li class="nav2uli"><a class="nav2ullia" href="portfolio.html">Portfolio</a></li>
-                <li class="dropdown2"><a class= "dropdowncolor" href="landscapes.html">Landscapes</a></li>
-                <li class="dropdown2"><a class= "dropdowncolor" href="portraits.html">Portraits &amp; People</a></li>
-                <li class="dropdown2"><a class= "dropdowncolor" href="blackandwhite.html">Black &amp; White</a></li>
-            <li class="nav2uli"><a class="nav2ullia" href="booking.html" >Booking</a></li>
-        </ul>    
-        </nav>
-
-<h1 class="portfolioh1-1">Landscape Photos</h1>
-    
 <section class="sidebar1">
     <img src="kingdomkeyphotographylogo.jpg" alt="Logo">
     </section>
+
+<h1 class="portfolioh1-1">Landscape Photos</h1>
+    
+
 
 <div class="clearfix"></div>
 <div class="slideshow-container">
@@ -154,6 +152,27 @@ function showSlides(n) {
     </audio>
         <p class = "audiofontsize">Bebe Rexha - Meant to Be (feat. Florida Georgia Line) - <br>
             Piano by PlutaX. Authorship and credit belongs to PlutaX.
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+            
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("myBtn").style.display = "block";
+  } else {
+    document.getElementById("myBtn").style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
 
 <footer class="second">
         <p>&copy; 2019 Kingdom Key Photography. Concept and Idea from Kingdom Hearts of Square Enix Co., LTD. All Rights Reserved.</p>
